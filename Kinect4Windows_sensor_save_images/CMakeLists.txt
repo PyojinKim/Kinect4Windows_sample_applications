@@ -1,8 +1,8 @@
 # project
-SET(PROJECT_NAME xtionpro_sensor_save_images)
+SET(PROJECT_NAME Kinect4Windows_sensor_save_images)
 PROJECT(${PROJECT_NAME} CXX C)
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.3)
-SET(OpenCV_DIR /home/icsl-rover-01/Documents/xtionpro_install/opencv-2.4.9/build/)
+SET(OpenCV_DIR /home/pjinkim/opencv-2.4.9/build/)
 SET(Boost_USE_MULTITHREADED ON)
 
 
@@ -42,5 +42,5 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -m64 -Ofast -flto -march=native")
 # TESTS
 
 
-ADD_EXECUTABLE(xtionpro_sensor_save_images ${SOURCEFILES})
-TARGET_LINK_LIBRARIES(xtionpro_sensor_save_images ${LINK_LIBS})
+ADD_EXECUTABLE(Kinect4Windows_sensor_save_images ${SOURCEFILES})
+TARGET_LINK_LIBRARIES(Kinect4Windows_sensor_save_images ${LINK_LIBS})

@@ -32,9 +32,8 @@ int main(int argc, char * argv[])
 	ti.tv_usec = 0;
 
 	// Set RGB-D camera device
-	system("killall XnSensorServer");
 	cv::VideoCapture dev;
-	dev.open( CV_CAP_OPENNI_ASUS );
+	dev.open( CV_CAP_OPENNI );
 	if( !dev.isOpened() ) {
 		printf("\n\nCannot find the RGBD camera. \n");
 		printf("Finish This Program. Thank you!! \n\n");
@@ -128,8 +127,8 @@ int main(int argc, char * argv[])
 			cv::Mat depth_image_show;
 			depth_image.convertTo(depth_image_show, CV_64FC1);
 
-			cv::imshow("xtionpro-Depth", depth_image_show / 10000);
-			cv::imshow("xtionpro-RGB", color_image);
+			cv::imshow("Kinect-Depth", depth_image_show / 10000);
+			cv::imshow("Kinect-RGB", color_image);
 			cv::waitKey(1);
 		}
 
