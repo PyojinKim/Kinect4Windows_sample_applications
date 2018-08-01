@@ -1,5 +1,6 @@
 # Prerequisites
 *.d
+*~
 
 # Compiled Object files
 *.slo
@@ -30,3 +31,8 @@
 *.exe
 *.out
 *.app
+
+
+# Exception folders
+Kinect4Windows_sensor_interface/build/
+Kinect4Windows_sensor_save_images/build/
