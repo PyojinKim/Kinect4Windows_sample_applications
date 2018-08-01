@@ -8,7 +8,7 @@ Please, refer to https://codeyarns.com/2013/07/23/how-to-get-started-with-kinect
 
 Requirements
 ```
-$ sudo apt-get install terminator git git-cola build-essential cmake
+$ sudo apt-get install terminator git git-cola build-essential cmake vim
 $ sudo apt-get install g++ python
 $ sudo apt-get install libusb-1.0-0-dev
 $ sudo apt-get install freeglut3-dev
